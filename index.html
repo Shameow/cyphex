@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CYPHEX - Cybersécurité & Croissance Digitale. Protection, automatisation IA et visibilité en ligne.">
+    <title>CYPHEX | Cybersécurité & Croissance Digitale</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="CYPHEX Logo">
+                    <span>CYPHEX</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Vous voulez grandir sans vous exposer ?<br>On s'en charge.</h1>
+                <p class="hero-subtitle">Cybersécurité & Croissance Digitale</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+                    <a href="#services" class="btn btn-secondary">Découvrir nos services</a>
+                </div>
+            </div>
+        </div>
+        <div class="leopard-pattern"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Cybersécurité & Conformité</h3>
+                    <p>Protection des comptes, prévention des risques cyber (phishing, usurpation d'identité), conseil RGPD et conformité réglementaire.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Automatisation IA</h3>
+                    <p>Solutions d'automatisation pour optimiser vos processus, gagner du temps et réduire les tâches répétitives grâce à l'IA.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Visibilité & Croissance Digitale</h3>
+                    <p>Optimisation de présence web, développement d'audience, référencement SEO/SEA, boost de visibilité et viralité sur les réseaux sociaux.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Prestations Techniques IT</h3>
+                    <p>Installation et configuration de services, mise en place d'infrastructures IT pour petites entreprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Why CYPHEX Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Pourquoi CYPHEX ?</h2>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h4>Discrétion absolue</h4>
+                        <p>Nous respectons votre vie privée et travaillons en toute confidentialité</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h4>Expertise confirmée</h4>
+                        <p>3 ans d'expérience en environnements bancaires et industriels exigeants</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h4>Solutions sur-mesure</h4>
+                        <p>Adaptées à vos besoins spécifiques et votre budget</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h4>Accompagnement complet</h4>
+                        <p>De la stratégie à la mise en œuvre, nous gérons tout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <a href="mailto:contact@cyphex.io">contact@cyphex.io</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📱</span>
+                        <a href="tel:+33658534047">+33 6 58 53 40 47</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">💼</span>
+                        <a href="https://linkedin.com/company/cyphex" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+
+                    <!-- ✅ FORMULAIRE NETLIFY INTÉGRÉ -->
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CYPHEX - Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
