@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Cyphex</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="Politique de Confidentialité (RGPD) de Cyphex, cabinet expert en cybersécurité.">
+
+    <style>
+        .static-page-header {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--black) 0%, var(--dark-900) 100%);
+        }
+        .static-page-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--white), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .static-page-content {
+            padding: var(--space-3xl) 0;
+            background: var(--dark-900);
+            color: var(--gray-100);
+            min-height: 50vh;
+        }
+        .static-page-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+            border-bottom: 2px solid rgba(255, 184, 0, 0.1);
+            padding-bottom: var(--space-sm);
+        }
+        .static-page-content h3 {
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-sm);
+        }
+        .static-page-content p, .static-page-content ul {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+            color: var(--gray-300);
+        }
+        .static-page-content strong {
+            color: var(--white);
+        }
+        .static-page-content a {
+            color: var(--gold);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .static-page-content a:hover {
+            color: var(--gold-light);
+        }
+        .static-page-content ul {
+            margin-left: var(--space-lg);
+            list-style: disc;
+        }
+        .static-page-content ul li {
+            margin-bottom: var(--space-xs);
+        }
+        .info-box {
+            background: rgba(255, 184, 0, 0.05);
+            border-left: 4px solid var(--gold);
+            padding: var(--space-md);
+            margin: var(--space-lg) 0;
+            border-radius: 8px;
+        }
+        .info-box p {
+            margin-bottom: 0;
+        }
+        .warning-box {
+            background: rgba(255, 85, 85, 0.05);
+            border-left: 4px solid var(--error);
+            padding: var(--space-md);
+            margin: var(--space-lg) 0;
+            border-radius: 8px;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: var(--space-lg) 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--dark-800);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table th {
+            background: rgba(255, 184, 0, 0.1);
+            color: var(--gold);
+            padding: var(--space-md);
+            text-align: left;
+            font-weight: 600;
+        }
+        table td {
+            padding: var(--space-md);
+            border-top: 1px solid rgba(255, 184, 0, 0.1);
+            color: var(--gray-300);
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html#hero" class="logo">
+                <img src="logo1.png" alt="Cyphex Logo" class="logo-img" width="50" height="auto">
+                <span class="logo-text">CYPHEX</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#about" class="nav-link">À Propos</a></li>
+                <li><a href="index.html#attacks" class="nav-link">Attaques en temps réel</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Avis clients</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+            <ul class="mobile-menu">
+                <li><a href="index.html#services" class="mobile-link">Services</a></li>
+                <li><a href="index.html#about" class="mobile-link">À propos</a></li>
+                <li><a href="index.html#attacks" class="mobile-link">Attaques en temps réel</a></li>
+                <li><a href="index.html#testimonials" class="mobile-link">Avis clients</a></li>
+                <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="static-page-header">
+            <div class="container">
+                <h1>Politique de Confidentialité</h1>
+                <p style="color: var(--gray-300); margin-top: 1rem;">Conforme au RGPD</p>
+            </div>
+        </section>
+
+        <section class="static-page-content">
+            <div class="container">
+                <div class="info-box">
+                    <p><strong>Dernière mise à jour :</strong> Novembre 2025</p>
+                </div>
+
+                <p>
+                    Cyphex accorde une grande importance à la protection de vos données personnelles et s'engage à respecter votre vie privée. La présente Politique de Confidentialité a pour objectif de vous informer de manière claire et transparente sur la collecte, l'utilisation, la conservation et la protection de vos données personnelles dans le cadre de l'utilisation de notre site web et de nos services.
+                </p>
+
+                <p>
+                    Cette politique est conforme au Règlement Général sur la Protection des Données (RGPD - Règlement UE 2016/679) et à la loi Informatique et Libertés modifiée.
+                </p>
+
+                <h2>Article 1 : Responsable du Traitement</h2>
+                
+                <p>
+                    Le responsable du traitement des données personnelles est :
+                </p>
+                
+                <p>
+                    <strong>Cyphex</strong><br>
+                    Société par Actions Simplifiée (SAS)<br>
+                    Siège social : 10 Rue de la Paix, 75002 Paris, France<br>
+                    RCS Paris B 123 456 789<br>
+                    Email : <a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a>
+                </p>
+
+                <h2>Article 2 : Données Personnelles Collectées</h2>
+                
+                <h3>2.1 Données collectées via le formulaire de contact</h3>
+                <p>
+                    Lorsque vous utilisez notre formulaire de contact, nous collectons les informations suivantes :
+                </p>
+                
+                <ul>
+                    <li><strong>Données obligatoires :</strong>
+                        <ul>
+                            <li>Nom et prénom</li>
+                            <li>Adresse email</li>
+                            <li>Sujet de votre message</li>
+                            <li>Contenu de votre message</li>
+                        </ul>
+                    </li>
+                    <li><strong>Données facultatives :</strong>
+                        <ul>
+                            <li>Société / Organisation</li>
+                            <li>Numéro de téléphone</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>2.2 Données collectées automatiquement</h3>
+                <p>
+                    Lors de votre navigation sur notre site, les données suivantes peuvent être collectées automatiquement :
+                </p>
+                
+                <ul>
+                    <li>Adresse IP</li>
+                    <li>Type et version du navigateur</li>
+                    <li>Système d'exploitation</li>
+                    <li>Pages visitées et temps de consultation</li>
+                    <li>Date et heure de visite</li>
+                </ul>
+
+                <h3>2.3 Données sensibles</h3>
+                <p>
+                    Nous ne collectons aucune donnée sensible telle que définie par l'article 9 du RGPD (origine raciale ou ethnique, opinions politiques, convictions religieuses, données de santé, etc.).
+                </p>
+
+                <h2>Article 3 : Finalités du Traitement</h2>
+                
+                <p>
+                    Vos données personnelles sont collectées et traitées pour les finalités suivantes :
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Finalité</th>
+                                <th>Base légale (RGPD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Répondre à vos demandes de contact, d'information, d'audit ou de devis</td>
+                                <td>Consentement (Art. 6.1.a)</td>
+                            </tr>
+                            <tr>
+                                <td>Gérer la relation commerciale et les contrats</td>
+                                <td>Exécution d'un contrat (Art. 6.1.b)</td>
+                            </tr>
+                            <tr>
+                                <td>Assurer le suivi de nos prospects et clients</td>
+                                <td>Intérêt légitime (Art. 6.1.f)</td>
+                            </tr>
+                            <tr>
+                                <td>Améliorer nos services et notre site web</td>
+                                <td>Intérêt légitime (Art. 6.1.f)</td>
+                            </tr>
+                            <tr>
+                                <td>Respecter nos obligations légales et réglementaires</td>
+                                <td>Obligation légale (Art. 6.1.c)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="warning-box">
+                    <p><strong>Engagement important :</strong> Nous ne vendons, ne louons et ne transmettons jamais vos données personnelles à des tiers à des fins commerciales ou marketing sans votre consentement explicite.</p>
+                </div>
+
+                <h2>Article 4 : Base Légale du Traitement</h2>
+                
+                <p>
+                    Conformément à l'article 6 du RGPD, le traitement de vos données personnelles repose sur les bases légales suivantes :
+                </p>
+
+                <ul>
+                    <li><strong>Votre consentement (Art. 6.1.a) :</strong> Lors de la soumission du formulaire de contact, vous consentez expressément au traitement de vos données en cochant la case dédiée.</li>
+                    <li><strong>L'exécution d'un contrat (Art. 6.1.b) :</strong> Pour les clients, le traitement est nécessaire à l'exécution du contrat de services.</li>
+                    <li><strong>Nos intérêts légitimes (Art. 6.1.f) :</strong> Gestion de la relation prospect, amélioration de nos services, sécurité du site.</li>
+                    <li><strong>Le respect d'une obligation légale (Art. 6.1.c) :</strong> Conservation de documents comptables, obligations fiscales, etc.</li>
+                </ul>
+
+                <h2>Article 5 : Destinataires des Données</h2>
+                
+                <h3>5.1 Personnel autorisé</h3>
+                <p>
+                    Vos données personnelles sont accessibles en interne uniquement par les membres habilités de notre équipe dans le cadre de leurs fonctions (équipe commerciale, support client, direction).
+                </p>
+
+                <h3>5.2 Prestataires de services</h3>
+                <p>
+                    Nous pouvons faire appel à des prestataires de services tiers pour le traitement de vos données, notamment :
+                </p>
+
+                <ul>
+                    <li><strong>EmailJS :</strong> Service d'envoi de formulaires de contact</li>
+                    <li><strong>OVHcloud :</strong> Hébergement du site web</li>
+                </ul>
+
+                <p>
+                    Ces prestataires agissent en qualité de sous-traitants au sens du RGPD et sont contractuellement tenus de respecter la confidentialité et la sécurité de vos données.
+                </p>
+
+                <h3>5.3 Autorités compétentes</h3>
+                <p>
+                    Nous pouvons être amenés à divulguer vos données personnelles si la loi l'exige ou dans le cadre de procédures judiciaires.
+                </p>
+
+                <h2>Article 6 : Transfert de Données hors UE</h2>
+                
+                <p>
+                    Vos données personnelles sont hébergées au sein de l'Union Européenne et ne font l'objet d'aucun transfert en dehors de l'UE, sauf si cela s'avère nécessaire pour l'utilisation de certains services tiers. Dans ce cas, nous nous assurons que :
+                </p>
+
+                <ul>
+                    <li>Le pays destinataire bénéficie d'une décision d'adéquation de la Commission Européenne, ou</li>
+                    <li>Des garanties appropriées sont mises en place (clauses contractuelles types, Privacy Shield, etc.)</li>
+                </ul>
+
+                <h2>Article 7 : Durée de Conservation</h2>
+                
+                <p>
+                    Nous conservons vos données personnelles uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées :
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Catégorie</th>
+                                <th>Durée de conservation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Prospects (formulaire de contact non suivi d'une relation commerciale)</td>
+                                <td>3 ans à compter du dernier contact</td>
+                            </tr>
+                            <tr>
+                                <td>Clients (pendant la relation contractuelle)</td>
+                                <td>Durée de la relation contractuelle</td>
+                            </tr>
+                            <tr>
+                                <td>Clients (après la fin de la relation contractuelle)</td>
+                                <td>5 ans pour les obligations comptables et fiscales</td>
+                            </tr>
+                            <tr>
+                                <td>Données de connexion (logs)</td>
+                                <td>1 an conformément à la loi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    À l'issue de ces durées, vos données sont supprimées ou anonymisées de manière sécurisée.
+                </p>
+
+                <h2>Article 8 : Sécurité des Données</h2>
+                
+                <p>
+                    Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour assurer la sécurité de vos données personnelles et les protéger contre toute destruction accidentelle, perte, altération, divulgation ou accès non autorisé, notamment :
+                </p>
+
+                <ul>
+                    <li>Chiffrement des données sensibles (certificat SSL/TLS pour le site)</li>
+                    <li>Contrôle d'accès strict aux données personnelles</li>
+                    <li>Sauvegardes régulières et sécurisées</li>
+                    <li>Protection contre les cyberattaques (pare-feu, antivirus, surveillance)</li>
+                    <li>Politique de mots de passe robustes</li>
+                    <li>Formation et sensibilisation de nos équipes à la protection des données</li>
+                </ul>
+
+                <h2>Article 9 : Vos Droits (RGPD)</h2>
+                
+                <p>
+                    Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :
+                </p>
+
+                <h3>9.1 Droit d'accès (Art. 15)</h3>
+                <p>
+                    Vous avez le droit d'obtenir la confirmation que des données vous concernant sont ou ne sont pas traitées et, lorsqu'elles le sont, l'accès auxdites données ainsi qu'à certaines informations sur le traitement.
+                </p>
+
+                <h3>9.2 Droit de rectification (Art. 16)</h3>
+                <p>
+                    Vous avez le droit de faire rectifier dans les meilleurs délais vos données personnelles inexactes ou incomplètes.
+                </p>
+
+                <h3>9.3 Droit à l'effacement / "Droit à l'oubli" (Art. 17)</h3>
+                <p>
+                    Vous pouvez obtenir l'effacement de vos données personnelles dans les cas prévus par la réglementation (données non nécessaires, retrait du consentement, opposition au traitement, etc.).
+                </p>
+
+                <h3>9.4 Droit à la limitation du traitement (Art. 18)</h3>
+                <p>
+                    Vous pouvez demander la limitation du traitement de vos données dans certains cas (contestation de l'exactitude, traitement illicite, etc.).
+                </p>
+
+                <h3>9.5 Droit à la portabilité (Art. 20)</h3>
+                <p>
+                    Vous avez le droit de recevoir vos données dans un format structuré, couramment utilisé et lisible par machine, et de les transmettre à un autre responsable de traitement.
+                </p>
+
+                <h3>9.6 Droit d'opposition (Art. 21)</h3>
+                <p>
+                    Vous pouvez vous opposer à tout moment au traitement de vos données personnelles pour des raisons tenant à votre situation particulière, notamment dans le cas de traitements fondés sur l'intérêt légitime.
+                </p>
+
+                <h3>9.7 Droit de retirer votre consentement</h3>
+                <p>
+                    Lorsque le traitement est fondé sur votre consentement, vous avez le droit de le retirer à tout moment, sans que cela ne porte atteinte à la licéité du traitement effectué avant le retrait.
+                </p>
+
+                <h3>9.8 Droit de définir des directives post-mortem</h3>
+                <p>
+                    Vous avez le droit de définir des directives relatives au sort de vos données personnelles après votre décès.
+                </p>
+
+                <h3>Comment exercer vos droits ?</h3>
+                <p>
+                    Pour exercer l'un de ces droits, vous pouvez nous contacter :
+                </p>
+
+                <ul>
+                    <li><strong>Par email :</strong> <a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a></li>
+                    <li><strong>Par courrier :</strong> Cyphex, 10 Rue de la Paix, 75002 Paris, France</li>
+                </ul>
+
+                <p>
+                    Nous vous répondrons dans un délai d'un mois à compter de la réception de votre demande. Ce délai peut être prolongé de deux mois si nécessaire, compte tenu de la complexité et du nombre de demandes.
+                </p>
+
+                <div class="info-box">
+                    <p><strong>Pièce d'identité :</strong> Pour des raisons de sécurité et afin de vérifier votre identité, nous pouvons vous demander une copie d'une pièce d'identité.</p>
+                </div>
+
+                <h2>Article 10 : Droit de Réclamation auprès de la CNIL</h2>
+                
+                <p>
+                    Si vous estimez que le traitement de vos données personnelles constitue une violation de la réglementation applicable, vous avez le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) :
+                </p>
+
+                <p>
+                    <strong>CNIL</strong><br>
+                    3 Place de Fontenoy - TSA 80715<br>
+                    75334 Paris Cedex 07<br>
+                    Téléphone : 01 53 73 22 22<br>
+                    Site web : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>
+                </p>
+
+                <h2>Article 11 : Cookies et Traceurs</h2>
+                
+                <h3>11.1 Cookies strictement nécessaires</h3>
+                <p>
+                    Notre site utilise uniquement des cookies strictement nécessaires à son fonctionnement technique :
+                </p>
+
+                <ul>
+                    <li>Cookies de session pour maintenir votre navigation</li>
+                    <li>Cookies de sécurité pour le formulaire de contact</li>
+                </ul>
+
+                <p>
+                    Ces cookies ne nécessitent pas votre consentement préalable conformément à la réglementation.
+                </p>
+
+                <h3>11.2 Widget Kaspersky Cybermap</h3>
+                <p>
+                    Notre site intègre un widget de visualisation des cyberattaques en temps réel fourni par Kaspersky Lab. Ce widget peut utiliser ses propres cookies et traceurs pour fonctionner. L'utilisation de ce widget est implicite à votre navigation sur la section dédiée "Attaques en temps réel".
+                </p>
+
+                <h3>11.3 Gestion des cookies</h3>
+                <p>
+                    Vous pouvez à tout moment désactiver les cookies via les paramètres de votre navigateur. Attention : la désactivation de certains cookies peut affecter le fonctionnement du site.
+                </p>
+
+                <h2>Article 12 : Mineurs</h2>
+                
+                <p>
+                    Nos services s'adressent aux professionnels et entreprises. Nous ne collectons pas sciemment de données personnelles concernant des mineurs de moins de 18 ans. Si vous êtes parent ou tuteur légal et que vous pensez que votre enfant nous a fourni des données personnelles, veuillez nous contacter immédiatement.
+                </p>
+
+                <h2>Article 13 : Modifications de la Politique</h2>
+                
+                <p>
+                    Nous nous réservons le droit de modifier la présente Politique de Confidentialité à tout moment afin de l'adapter aux évolutions légales, réglementaires ou techniques. Toute modification sera publiée sur cette page avec indication de la date de mise à jour.
+                </p>
+
+                <p>
+                    Nous vous encourageons à consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.
+                </p>
+
+                <h2>Article 14 : Contact et Délégué à la Protection des Données</h2>
+                
+                <p>
+                    Pour toute question relative à la protection de vos données personnelles ou à la présente Politique de Confidentialité, vous pouvez nous contacter :
+                </p>
+
+                <p>
+                    <strong>Responsable de la protection des données :</strong><br>
+                    Cyphex<br>
+                    Email : <a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a><br>
+                    Adresse : 10 Rue de la Paix, 75002 Paris, France
+                </p>
+
+                <div style="margin-top: 60px; text-align: center;">
+                    <a href="index.html#hero" class="btn btn-secondary">Retour à l'accueil</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html#hero" class="footer-logo">
+                    <img src="logo1.png" alt="Cyphex Logo" class="logo-img">
+                    <span>CYPHEX</span>
+                </a>
+                <p class="footer-desc">Votre partenaire confiance en cybersécurité. Audit, conformité et protection sur mesure pour votre entreprise.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">À Propos</a></li>
+                    <li><a href="index.html#attacks">Attaques en temps réel</a></li>
+                    <li><a href="index.html#testimonials">Avis clients</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>10 Rue de la Paix<br>75002 Paris, France</p>
+                <p><a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cyphex - Tous droits réservés.</p>
+            <p>Design et développé par NeoX</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

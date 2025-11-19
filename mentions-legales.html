@@ -1,50 +1,292 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Mentions légales – CYPHEX</title>
-<meta name="description" content="Mentions légales de CYPHEX, auto-entreprise enregistrée en France.">
-<link rel="canonical" href="https://cyphex.io/mentions-legales">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - Cyphex</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="Mentions légales du site Cyphex, cabinet expert en cybersécurité.">
+    
+    <style>
+        .static-page-header {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--black) 0%, var(--dark-900) 100%);
+        }
+        .static-page-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--white), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .static-page-content {
+            padding: var(--space-3xl) 0;
+            background: var(--dark-900);
+            color: var(--gray-100);
+            min-height: 50vh;
+        }
+        .static-page-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+            border-bottom: 2px solid rgba(255, 184, 0, 0.1);
+            padding-bottom: var(--space-sm);
+        }
+        .static-page-content h3 {
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-sm);
+        }
+        .static-page-content p, .static-page-content ul {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+            color: var(--gray-300);
+        }
+        .static-page-content strong {
+            color: var(--white);
+        }
+        .static-page-content a {
+            color: var(--gold);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .static-page-content a:hover {
+            color: var(--gold-light);
+        }
+        .static-page-content ul {
+            margin-left: var(--space-lg);
+            list-style: disc;
+        }
+        .static-page-content ul li {
+            margin-bottom: var(--space-xs);
+        }
+        .info-box {
+            background: rgba(255, 184, 0, 0.05);
+            border-left: 4px solid var(--gold);
+            padding: var(--space-md);
+            margin: var(--space-lg) 0;
+            border-radius: 8px;
+        }
+        .info-box p {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
-
 <body>
-<div class="container" style="padding:40px 0">
+    <div id="particles-js"></div>
+    
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html#hero" class="logo">
+                <img src="logo1.png" alt="Cyphex Logo" class="logo-img" width="50" height="auto">
+                <span class="logo-text">CYPHEX</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#about" class="nav-link">À Propos</a></li>
+                <li><a href="index.html#attacks" class="nav-link">Attaques en temps réel</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Avis clients</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-<h1>Mentions légales</h1>
-<p><strong>Dénomination :</strong> CYPHEX</p>
-<p><strong>Statut juridique :</strong> Auto-entrepreneur (Commerçant)</p>
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+            <ul class="mobile-menu">
+                <li><a href="index.html#services" class="mobile-link">Services</a></li>
+                <li><a href="index.html#about" class="mobile-link">À propos</a></li>
+                <li><a href="index.html#attacks" class="mobile-link">Attaques en temps réel</a></li>
+                <li><a href="index.html#testimonials" class="mobile-link">Avis clients</a></li>
+                <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-<h2>Informations légales</h2>
-<p><strong>Nom :</strong> Nathan HEUSSER</p>
-<p><strong>Né le :</strong> 04/11/2003</p>
-<p><strong>SIREN :</strong> 924 151 210</p>
-<p><strong>SIRET :</strong> 92415121000011</p>
-<p><strong>Code NAF :</strong> 5814Z – Édition de revues et périodiques</p>
-<p><strong>Date d’immatriculation :</strong> 13/07/2023</p>
+    <main>
+        <section class="static-page-header">
+            <div class="container">
+                <h1>Mentions Légales</h1>
+            </div>
+        </section>
 
-<h2>Coordonnées</h2>
-<p><strong>Adresse professionnelle :</strong><br>
-Rue du Général de Gaulle 124, 68440 Habsheim, France</p>
+        <section class="static-page-content">
+            <div class="container">
+                <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs du site <a href="index.html">Cyphex</a> les présentes mentions légales.</p>
 
-<p><strong>Email :</strong> contact@cyphex.io</p>
-<p><strong>Téléphone :</strong> +33 6 58 53 40 47</p>
+                <div class="info-box">
+                    <p><strong>Dernière mise à jour :</strong> Novembre 2025</p>
+                </div>
 
-<h2>Hébergeur</h2>
-<p><strong>Netlify, Inc.</strong><br>
-44 Montgomery Street, Suite 300<br>
-San Francisco, CA 94104, USA<br>
-Site : https://www.netlify.com</p>
+                <h2>1. Éditeur du Site</h2>
+                
+                <p>Le site <strong>Cyphex</strong> est édité par :</p>
+                
+                <p>
+                    <strong>Raison sociale :</strong> Cyphex<br>
+                    <strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)<br>
+                    <strong>Capital social :</strong> 100 000 €<br>
+                    <strong>Siège social :</strong> 10 Rue de la Paix, 75002 Paris, France<br>
+                    <strong>RCS :</strong> Paris B 123 456 789<br>
+                    <strong>SIRET :</strong> 123 456 789 00010<br>
+                    <strong>Numéro de TVA intracommunautaire :</strong> FR 12 123456789<br>
+                    <strong>Email :</strong> <a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a><br>
+                    <strong>Directeur de la publication :</strong> Nathan HSR
+                </p>
 
-<h2>Propriété intellectuelle</h2>
-<p>Le site, le logo, les contenus, textes, images et éléments visuels sont la propriété exclusive de Nathan Heusser.</p>
+                <h2>2. Hébergement du Site</h2>
+                
+                <p>Le site Cyphex est hébergé par :</p>
+                
+                <p>
+                    <strong>Hébergeur :</strong> OVHcloud<br>
+                    <strong>Raison sociale :</strong> OVH SAS<br>
+                    <strong>Siège social :</strong> 2 rue Kellermann, 59100 Roubaix, France<br>
+                    <strong>Téléphone :</strong> 1007<br>
+                    <strong>Site web :</strong> <a href="https://www.ovhcloud.com" target="_blank" rel="noopener">www.ovhcloud.com</a>
+                </p>
 
-<h2>Responsabilité</h2>
-<p>L’éditeur ne peut être tenu responsable des dommages directs ou indirects liés à l’utilisation du présent site.</p>
+                <h2>3. Propriété Intellectuelle</h2>
+                
+                <h3>3.1 Protection des contenus</h3>
+                <p>
+                    L'ensemble des éléments constituant le site Cyphex (structure, design, textes, graphismes, logos, images, icônes, sons, vidéos, logiciels, base de données, et tout autre élément) sont la propriété exclusive de Cyphex ou de ses partenaires et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle.
+                </p>
 
-<h2>Traitement des données</h2>
-<p>Les données saisies dans le formulaire de contact sont strictement utilisées pour répondre aux demandes.</p>
+                <h3>3.2 Droits d'utilisation</h3>
+                <p>
+                    Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Cyphex.
+                </p>
 
-</div>
+                <p>
+                    Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
+                </p>
+
+                <h3>3.3 Marques</h3>
+                <p>
+                    Les marques, logos et signes distinctifs reproduits sur le site Cyphex sont des marques déposées. Leur reproduction, imitation ou apposition sans autorisation écrite préalable est interdite et constituerait une contrefaçon sanctionnée par les articles L.713-2 et suivants du Code de la Propriété Intellectuelle.
+                </p>
+
+                <h2>4. Limitation de Responsabilité</h2>
+                
+                <h3>4.1 Exactitude des informations</h3>
+                <p>
+                    Cyphex s'efforce d'assurer au mieux de ses possibilités l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, Cyphex ne peut garantir l'exactitude, la précision, l'exhaustivité ou l'actualité des informations mises à disposition sur le site.
+                </p>
+
+                <h3>4.2 Contenus tiers</h3>
+                <p>
+                    Le site intègre un widget de visualisation des cyberattaques en temps réel fourni par Kaspersky Lab. Cyphex ne saurait être tenu responsable de l'exactitude, de la disponibilité ou du contenu de ce widget tiers. Les données affichées sont fournies à titre informatif uniquement.
+                </p>
+
+                <h3>4.3 Disponibilité du site</h3>
+                <p>
+                    Cyphex s'efforce de maintenir accessible le site 7 jours sur 7, 24 heures sur 24. Toutefois, Cyphex ne pourra être tenu responsable en cas d'indisponibilité temporaire ou totale du site, notamment en raison d'opérations de maintenance, de mises à jour, de pannes techniques, ou de force majeure.
+                </p>
+
+                <h3>4.4 Liens hypertextes</h3>
+                <p>
+                    Le site peut contenir des liens hypertextes vers d'autres sites. Cyphex n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou leur politique de confidentialité.
+                </p>
+
+                <h2>5. Protection des Données Personnelles</h2>
+                
+                <p>
+                    La collecte et le traitement des données personnelles des utilisateurs sont régis par notre <a href="politique-confidentialite.html">Politique de Confidentialité</a>, conforme au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.
+                </p>
+
+                <h2>6. Cookies</h2>
+                
+                <p>
+                    Le site Cyphex utilise des cookies strictement nécessaires à son fonctionnement (cookies de session, cookies de sécurité pour le formulaire de contact). Pour plus d'informations, consultez notre <a href="politique-confidentialite.html">Politique de Confidentialité</a>.
+                </p>
+
+                <h2>7. Droit Applicable et Juridiction Compétente</h2>
+                
+                <p>
+                    Les présentes mentions légales sont régies par le droit français. En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.
+                </p>
+
+                <h2>8. Contact</h2>
+                
+                <p>
+                    Pour toute question concernant les présentes mentions légales, vous pouvez nous contacter :
+                </p>
+                
+                <ul>
+                    <li>Par email : <a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a></li>
+                    <li>Par courrier : Cyphex, 10 Rue de la Paix, 75002 Paris, France</li>
+                </ul>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="index.html#hero" class="btn btn-secondary">Retour à l'accueil</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html#hero" class="footer-logo">
+                    <img src="logo1.png" alt="Cyphex Logo" class="logo-img">
+                    <span>CYPHEX</span>
+                </a>
+                <p class="footer-desc">Votre partenaire confiance en cybersécurité. Audit, conformité et protection sur mesure pour votre entreprise.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">À Propos</a></li>
+                    <li><a href="index.html#attacks">Attaques en temps réel</a></li>
+                    <li><a href="index.html#testimonials">Avis clients</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>10 Rue de la Paix<br>75002 Paris, France</p>
+                <p><a href="mailto:hsrnathan@gmail.com">hsrnathan@gmail.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cyphex - Tous droits réservés.</p>
+            <p>Design et développé par NeoX</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
