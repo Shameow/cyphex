@@ -1,5 +1,5 @@
 # Robots.txt pour CYPHEX
-# https://cyphex.io
+# https://nathanheusser.github.io/cyphex/
 
 # Autoriser tous les robots
 User-agent: *
@@ -11,7 +11,7 @@ Disallow: /private/
 Disallow: /*.pdf$
 
 # Sitemap
-Sitemap: https://cyphex.io/sitemap.xml
+Sitemap: https://nathanheusser.github.io/cyphex/sitemap.xml
 
 # Crawl-delay (optionnel - limite la fréquence de crawl)
 Crawl-delay: 10
