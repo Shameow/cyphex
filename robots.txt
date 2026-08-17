@@ -1,5 +1,5 @@
 # Robots.txt pour CYPHEX
-# https://shameow.github.io/cyphex/
+# https://cyphex.io/
 
 # Autoriser tous les robots
 User-agent: *
@@ -11,7 +11,7 @@ Disallow: /private/
 Disallow: /*.pdf$
 
 # Sitemap
-Sitemap: https://shameow.github.io/cyphex/sitemap.xml
+Sitemap: https://cyphex.io/sitemap.xml
 
 # Crawl-delay (optionnel - limite la fréquence de crawl)
 Crawl-delay: 10

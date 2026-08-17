@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://api.emailjs.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://cdn.jsdelivr.net data:; img-src 'self' data: blob:; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com data:; connect-src 'self' https://api.emailjs.com https://cdn.jsdelivr.net; form-action 'self' https://api.emailjs.com; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
@@ -12,19 +14,19 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
 
-    <link rel="canonical" href="https://shameow.github.io/cyphex/">
+    <link rel="canonical" href="https://cyphex.io/">
     
 
     <meta name="language" content="fr">
-    <link rel="alternate" hreflang="fr" href="https://shameow.github.io/cyphex/">
-    <link rel="alternate" hreflang="x-default" href="https://shameow.github.io/cyphex/">
+    <link rel="alternate" hreflang="fr" href="https://cyphex.io/">
+    <link rel="alternate" hreflang="x-default" href="https://cyphex.io/">
     
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shameow.github.io/cyphex/">
+    <meta property="og:url" content="https://cyphex.io/">
     <meta property="og:title" content="Cyphex | Expertise IT, Cybersécurité & Performance Digitale">
     <meta property="og:description" content="Expertise technique par Nathan Heusser : Administration systèmes, IAM, support N2 et protection des actifs numériques pour TPE/PME et structures critiques.">
-    <meta property="og:image" content="https://shameow.github.io/cyphex/logo.png">
+    <meta property="og:image" content="https://cyphex.io/logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="CYPHEX - Nathan Heusser Expertise IT">
@@ -33,10 +35,10 @@
     
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://shameow.github.io/cyphex/">
+    <meta name="twitter:url" content="https://cyphex.io/">
     <meta name="twitter:title" content="Cyphex - Expert en Cybersécurité & Audit de Sécurité">
     <meta name="twitter:description" content="Support IT, cybersécurité et automatisation pour les TPE/PME et les environnements critiques."> 
-    <meta name="twitter:image" content="https://shameow.github.io/cyphex/logo.png">
+    <meta name="twitter:image" content="https://cyphex.io/logo.png">
     
 
     <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
@@ -55,9 +57,9 @@
     <link rel="stylesheet" href="style.css">
     
 
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" integrity="sha384-6p9AefaqUhEVheRlj1mpAkbngHXy9mbYMrIdcIt4Jlc9lOLIablJq3bBsLOjGwZ7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" integrity="sha384-pPVoXE8ft+zxKtxIDDI7SfTK6y95NHm4qa+hKEg/hs8VkjW5IP+9/dGOPCbDpUPl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" integrity="sha384-UVFvhZP7fWAENUPOoq61rJg5ef6QZW0k5vpAn71041/QS4STvUcJQCGNhStZLGx9" crossorigin="anonymous">
     
 
 <script type="application/ld+json">
@@ -66,8 +68,8 @@
         "@type": "Organization",
         "name": "CYPHEX",
         "alternateName": "Nathan Heusser IT",
-        "url": "https://shameow.github.io/cyphex/",
-        "logo": "https://shameow.github.io/cyphex/logo.png",
+        "url": "https://cyphex.io/",
+        "logo": "https://cyphex.io/logo.png",
         "description": "Support IT, cybersécurité et automatisation pour les TPE/PME et les environnements critiques.",
         "foundingDate": "2025",
         "founder": {
@@ -379,15 +381,19 @@
                     </div>
                     
                     <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-honeypot" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+                            <label for="website">Ne remplissez pas ce champ</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Nom complet *</label>
-                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" maxlength="100" required>
                                 <span class="error-message"></span>
                             </div>
                             <div class="form-group">
                                 <label for="company">Société / Projet</label>
-                                <input type="text" id="company" name="company" placeholder="Votre société ou nom d'artiste">
+                                <input type="text" id="company" name="company" placeholder="Votre société ou nom d'artiste" maxlength="100">
                                 <span class="error-message"></span>
                             </div>
                         </div>
@@ -395,12 +401,12 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                                <input type="email" id="email" name="email" placeholder="Votre email" maxlength="254" required>
                                 <span class="error-message"></span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" maxlength="20">
                                 <span class="error-message"></span>
                             </div>
                         </div>
@@ -421,13 +427,13 @@
 
                         <div class="form-group">
                             <label for="message">Votre message *</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Comment puis-je vous accompagner ?" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Comment puis-je vous accompagner ?" maxlength="2000" required></textarea>
                             <span class="error-message"></span>
                         </div>
 
                         <div class="form-group-checkbox">
                             <input type="checkbox" id="rgpd" required>
-                            <label for="rgpd">J'accepte que Cyphex traite mes données pour répondre à ma demande, conformément à la <a href="politique-confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.*</label>
+                            <label for="rgpd">J'accepte que Cyphex traite mes données pour répondre à ma demande, conformément à la <a href="politique-confidentialite.html" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.*</label>
                             <span class="error-message"></span>
                         </div>
 
@@ -487,8 +493,8 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" integrity="sha384-d+UOwmNNIC7V4izkTAKSXzWhjC2GxiS9PTykO1XdOPC3nc2z65UOS7SP6QdKPA70" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" integrity="sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

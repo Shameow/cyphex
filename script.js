@@ -337,32 +337,54 @@ function initFormValidation() {
     const serviceInput = $('#service');
     const messageInput = $('#message');
     const rgpdInput = $('#rgpd');
+    const honeypotInput = $('#website');
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[\d\s()+-]{8,}$/;
+    const maxLengths = {
+        name: 100,
+        company: 100,
+        email: 254,
+        phone: 20,
+        message: 2000
+    };
     
     const showError = (input, message) => {
-        const formGroup = input.closest('.form-group') || input.closest('.form-group-checkbox');
+        if (!input) return;
+        const formGroup = input.closest('.form-group') || input.closest('.form-group-checkbox') || input.closest('.form-honeypot');
+        if (!formGroup) return;
+
         const errorElement = formGroup.querySelector('.error-message');
-        
         formGroup.classList.add('error');
         formGroup.classList.remove('valid');
         if (errorElement) errorElement.textContent = message;
     };
     
     const showSuccess = (input) => {
-        const formGroup = input.closest('.form-group') || input.closest('.form-group-checkbox');
+        if (!input) return;
+        const formGroup = input.closest('.form-group') || input.closest('.form-group-checkbox') || input.closest('.form-honeypot');
+        if (!formGroup) return;
+
         const errorElement = formGroup.querySelector('.error-message');
-        
         formGroup.classList.remove('error');
         formGroup.classList.add('valid');
         if (errorElement) errorElement.textContent = '';
     };
     
     const validateField = (input) => {
+        if (!input) return true;
+
         const value = input.value.trim();
         const type = input.type;
         const id = input.id;
+
+        if (input === honeypotInput) {
+            if (value !== '') {
+                showError(input, 'Formulaire invalide.');
+                return false;
+            }
+            return true;
+        }
         
         if (input.required && value === '') {
             if (type === 'checkbox' && !input.checked) {
@@ -370,6 +392,16 @@ function initFormValidation() {
                 return false;
             }
             showError(input, 'Ce champ est requis.');
+            return false;
+        }
+
+        if (id && maxLengths[id] && value.length > maxLengths[id]) {
+            showError(input, `Ce champ ne peut pas dépasser ${maxLengths[id]} caractères.`);
+            return false;
+        }
+
+        if (id === 'name' && value !== '' && value.length < 2) {
+            showError(input, 'Veuillez entrer un nom valide.');
             return false;
         }
         
@@ -380,6 +412,11 @@ function initFormValidation() {
         
         if (id === 'phone' && value !== '' && !phoneRegex.test(value)) {
             showError(input, 'Format de téléphone non valide.');
+            return false;
+        }
+
+        if (id === 'message' && value !== '' && value.length < 10) {
+            showError(input, 'Votre message est trop court.');
             return false;
         }
         
@@ -395,7 +432,7 @@ function initFormValidation() {
         return true;
     };
     
-    [nameInput, companyInput, emailInput, phoneInput, serviceInput, messageInput, rgpdInput].forEach(input => {
+    [nameInput, companyInput, emailInput, phoneInput, serviceInput, messageInput, rgpdInput, honeypotInput].forEach(input => {
         if (input) {
             input.addEventListener('input', () => validateField(input));
             input.addEventListener('blur', () => validateField(input));
@@ -404,14 +441,18 @@ function initFormValidation() {
     
     form.addEventListener('submit', function(e) {
         e.preventDefault();
+
+        if (honeypotInput && honeypotInput.value.trim() !== '') {
+            return;
+        }
         
         const isNameValid = validateField(nameInput);
-        const isCompanyValid = validateField(companyInput);
+        const isCompanyValid = companyInput ? validateField(companyInput) : true;
         const isEmailValid = validateField(emailInput);
         const isMessageValid = validateField(messageInput);
         const isServiceValid = validateField(serviceInput);
         const isRgpdValid = validateField(rgpdInput);
-        const isPhoneValid = phoneInput.value.trim() === '' ? true : validateField(phoneInput);
+        const isPhoneValid = phoneInput && phoneInput.value.trim() === '' ? true : validateField(phoneInput);
         
         if (isNameValid && isCompanyValid && isEmailValid && isMessageValid && isServiceValid && isRgpdValid && isPhoneValid) {
             const submitBtn = form.querySelector('.btn-submit');
