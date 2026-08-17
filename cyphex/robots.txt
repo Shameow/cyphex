@@ -1,0 +1,17 @@
+# Robots.txt pour CYPHEX
+# https://cyphex.io
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers inutiles (si présents)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Sitemap
+Sitemap: https://cyphex.io/sitemap.xml
+
+# Crawl-delay (optionnel - limite la fréquence de crawl)
+Crawl-delay: 10
