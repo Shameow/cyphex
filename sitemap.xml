@@ -4,7 +4,7 @@
     <!-- Page d'accueil -->
     <url>
         <loc>https://cyphex.io/</loc>
-        <lastmod>2025-11-21</lastmod>
+        <lastmod>2026-09-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,7 +12,7 @@
     <!-- Mentions légales -->
     <url>
         <loc>https://cyphex.io/mentions-legales.html</loc>
-        <lastmod>2025-11-21</lastmod>
+        <lastmod>2026-09-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
@@ -20,7 +20,7 @@
     <!-- Politique de confidentialité -->
     <url>
         <loc>https://cyphex.io/politique-confidentialite.html</loc>
-        <lastmod>2025-11-21</lastmod>
+        <lastmod>2026-09-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
